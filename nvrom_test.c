@@ -26,16 +26,21 @@ int main(int argc, char **argv)
         --argc;
         ++argv;
 
-        f1 = fopen(argv[0], "rb");
+        //f1 = fopen(argv[0], "rb");
+        f1 = fopen("./CuckooFilter/test.jpg", "rb");
         if (f1 == NULL) {
-                fprintf(stderr, "Fail to open %s!\n", argv[0]);
+                //fprintf(stderr, "Fail to open %s!\n", argv[0]);
+                printf("Fail to open readfile!\n");
                 exit(-1);
         }
-        stat(argv[0], &st);
+        //stat(argv[0], &st);
+        stat("./CuckooFilter/test.jpg", &st);
 
-        f2 = fopen(argv[1], "wb+");
+        //f2 = fopen(argv[1], "wb+");
+        f2 = fopen("./CuckooFilter/result.jpg", "wb+");
         if (f2 == NULL) {
-                fprintf(stderr, "Fail to open %s!\n", argv[1]);
+                //fprintf(stderr, "Fail to open %s!\n", argv[1]);
+                printf("Fail to open writefile!\n");
                 exit(-1);
         }
 
