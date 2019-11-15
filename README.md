@@ -1,10 +1,12 @@
 # CSE220_Proj2
 
-cd CuckooFilter
+cd build/release/run
 
-riscv64-linux-gnu-gcc -O3 -static cuckoo_filter.c nvrom_test.c ./mozilla-sha1/sha1/sha1.c -o cuckoo.rv
+git clone https://github.com/ZoranPandovski/al-go-rithms
 
-cd ..
+mv -i ./al-go-rithms/backtracking/knightsTour/C++/knightsTour.cpp knightsTour.cpp
+
+riscv64-linux-gnu-g++ -O3 -static knightsTour.cpp -o knightsTour.rv
 
 ./callESESC.sh
 
