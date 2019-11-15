@@ -2,11 +2,11 @@
 
 cd build/release/run
 
-git clone https://github.com/ZoranPandovski/al-go-rithms
+git clone https://github.com/TheAlgorithms/C-Plus-Plus
 
-mv -i ./al-go-rithms/backtracking/knightsTour/C++/knightsTour.cpp knightsTour.cpp
+mv -i ./C-Plus-Plus/Bubble\ Sort.cpp Bubble.cpp
 
-riscv64-linux-gnu-g++ -O3 -static knightsTour.cpp -o knightsTour.rv
+riscv64-linux-gnu-g++ -O3 -static Bubble.cpp -o Bubble.rv
 
 ./callESESC.sh
 
