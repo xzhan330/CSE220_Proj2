@@ -12,7 +12,6 @@ export ESESC_DL1_core_hitDelay="0"
 
 export ESESC_tradCORE_decodeDelay="1"
 export ESESC_tradCORE_renameDelay="1"
-export ESESC_tradCORE_retireDelay="0"
 
 
 if [ -f $ESESC_BIN ]; then
